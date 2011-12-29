@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+
+  <html>
+  <head>
+  <meta charset="utf-8">
+  <title>Phone Staging Environment</title>
+  <script type="text/javascript" src="jquery.1.7.1.js"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function(){
+
+	$("#urlForm").submit(function(e) {
+        e.preventDefault();
+		
+		var location = $("#uri").val();
+		
+		$(".mobileScreen").attr("src",location);
+    });
+
+});
+//-->
+</script>
+  <style type="text/css">
+#theMain {
+	background-image: url(IPhone_3G.png);
+	display: block;
+	height: 708px;
+	width: 402px;
+	margin-top: 8px;
+	margin-right: auto;
+	margin-bottom: 8px;
+	margin-left: auto;
+	position: relative;
+	background-size: 100% 100%;
+}
+
+#theScreen {
+	display: block;
+	height: 480px;
+	width: 320px;
+	position: absolute;
+	top: 110px;
+	left: 35px;
+}
+  #description {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	width: 402px;
+	position: relative;
+	margin: 12px auto;
+}
+  </style>
+  </head>
+    
+  <body>
+  <div id="theMain">
+     <div id="theScreen"><iframe height="480" width="340" src="http://on-cor.com/mobile" scrolling="auto" class="mobileScreen"></iframe></div>   
+  </div>
+  <div id="description"><form action="" method="get" id="urlForm"><input name="uri" type="text" size="50" maxlength="90" id="uri"><input name="View" type="submit" value="View"></form><br>
+Enter a mobile page in the text box above and press &ldquo;View&rdquo;<br>
+Please note that this is only a convenient way to see scaling and some other display issues. It is not a full-fledged device emulator.</div>
+  </body>
+  </html>
+
+
