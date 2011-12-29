@@ -1,0 +1,8 @@
+This is something I created for previewing mobile sites and applications. It is very simple and
+for previewing layouts, though that is frequently half the battle and more! This is not a full
+fledged emulator by any means, but it is a little easier in some workflows than picking up a phone
+to do a quick front-end preview.
+
+12/29/11-
+In the future I may work in some server side coding to make this return a mobile device user agent.
+I plan to add orientation changing sometime soon.
